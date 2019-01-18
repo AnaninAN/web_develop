@@ -11,11 +11,10 @@ a {
 html,
 body {
   max-height: 100%;
-  max-width: 1600px;
   margin: 0 auto;
 }
 .container {
-  max-width: 1140px;
+  width: 1140px;
   margin: 0 auto;
 }
 .header,
@@ -294,15 +293,15 @@ body {
 .browseAllProduct__button i {
   margin-left: 9px;
 }
-.bottomBannerBlock {
+.bottomBanner {
   display: flex;
-  margin: 100px 0 123px;
+  margin-top: 100px;
   position: relative;
-  width: 1600px;
   height: 438px;
   background: url(../img/bottom_banner.jpg) no-repeat;
+  background-size: cover;
 }
-.bottomBannerBlock::after {
+.bottomBanner::after {
   content: '';
   width: inherit;
   height: inherit;
@@ -310,11 +309,14 @@ body {
   top: 0;
   background-color: rgba(242, 242, 242, 0.5);
 }
+.bottomBannerBlock {
+  display: flex;
+}
 .feedback {
   width: 500px;
   position: relative;
   z-index: 9999;
-  margin: 100px 0 0 230px;
+  margin-top: 100px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -359,7 +361,7 @@ body {
 }
 .subscribe {
   width: 390px;
-  margin: 125px 0 0 165px;
+  margin: 150px 0 0 165px;
   text-align: center;
   position: relative;
   z-index: 9999;
